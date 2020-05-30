@@ -99,13 +99,14 @@ const IndexPage = () => {
             </p>
           </article>
           <button
-            onClick={() => {
+            onClick={e => {
               setConfettiShower(false)
               setTimeout(setConfettiShower.bind(this, true), 0)
               firebase
                 .database()
                 .ref("/celebrate")
                 .set(data + 1)
+              e.preventDefault()
             }}
           >
             {`🎉 Celebrate ${data ? `(${data})` : ""}`}
