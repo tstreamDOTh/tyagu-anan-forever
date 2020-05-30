@@ -28,6 +28,20 @@ module.exports = {
         icon: `src/images/favicon-32x32.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: "gatsby-plugin-firebase",
+      options: {
+        credentials: {
+          apiKey: "AIzaSyCgEOWBv7WXdwdtY6RWC00T4qXQUYjrnag",
+          authDomain: "funcky.firebaseapp.com",
+          databaseURL: "https://funcky.firebaseio.com",
+          projectId: "funcky",
+          storageBucket: "funcky.appspot.com",
+          messagingSenderId: "970379730199",
+          appId: "1:970379730199:web:9b0730a99449e11722eb52",
+        },
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

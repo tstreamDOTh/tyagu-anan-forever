@@ -58,6 +58,30 @@ p {
   }
 }
 
+section.celebrate {
+  margin: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 6rem;
+  p {
+    margin-top: 1.4rem;
+  }
+  button {
+    border: none;
+    outline: none;
+    background: var(--primary-purple);
+    padding: 2rem;
+    color: var(--primary-accent);
+    font-family: "Permanent Marker", cursive;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-top: 4rem;
+  }
+}
+
 section.invite {
   article {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
