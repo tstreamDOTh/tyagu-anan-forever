@@ -50,7 +50,7 @@ const IndexPage = () => (
           <span className="highlight">Life </span>. <br></br>
           <br></br>
           Its been about 8 years together and we have decided to move forward in
-          live as husband & wife.
+          life as husband & wife.
         </p>
       </article>
       <img src={coupleImage} />
