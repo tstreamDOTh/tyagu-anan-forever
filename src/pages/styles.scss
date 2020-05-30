@@ -3,6 +3,7 @@
 * {
   font-size: 10px;
   --primary-purple: #9990d7;
+  --primary-pink: #ff96ca;
   --primary-accent: white;
   --primary-text: #9990d7;
   --secondary-text: #5a5a5c;
@@ -44,7 +45,44 @@ a {
 
 p {
   color: var(--sub-text);
-  font-size: 2.8rem;
+  font-size: 2.2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  span.highlight {
+    font-style: italic;
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: var(--primary-pink);
+  }
+}
+
+section.invite {
+  article {
+    border: 1.2rem solid var(--primary-pink);
+    padding: 4rem;
+    max-width: 60rem;
+    margin: 8rem auto;
+
+    h3 {
+      margin-bottom: 2rem;
+    }
+
+    .sign {
+      width: fit-content;
+      margin-left: auto;
+      margin-top: 4rem;
+      .from {
+        font-family: "Permanent Marker", cursive;
+        color: var(--primary-purple);
+        font-size: 1.4rem;
+      }
+      .name {
+        font-family: "Permanent Marker", cursive;
+        color: var(--primary-purple);
+        font-size: 2rem;
+      }
+    }
+  }
 }
 
 section.hero {
@@ -105,6 +143,9 @@ section.plain-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    h3 {
+      margin-bottom: 1rem;
+    }
   }
 
   img {
@@ -153,6 +194,21 @@ section.plain-info {
 
     &:nth-child(even) {
       flex-direction: column;
+    }
+  }
+
+  section.invite {
+    article {
+      border: 1.2rem solid var(--primary-pink);
+      padding: 4rem;
+      max-width: unset;
+      margin: 4rem;
+      width: calc(100% - 16rem);
+      margin-bottom: 8rem;
+
+      h3 {
+        margin-bottom: 2rem;
+      }
     }
   }
 }
