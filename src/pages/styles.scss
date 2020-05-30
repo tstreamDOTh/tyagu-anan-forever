@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Permanent+Marker&display=swap");
+
+* {
+  font-size: 10px;
+  --primary-purple: #9990d7;
+  --primary-accent: white;
+  --primary-text: #9990d7;
+  --secondary-text: #5a5a5c;
+  margin: 0;
+  font-family: "Caveat", cursive;
+  font-weight: 500;
+  color: var(--secondary-text);
+}
+
+body {
+  margin: 0;
+}
+
+h2 {
+  font-family: "Permanent Marker", cursive;
+  color: var(--primary-purple);
+  font-size: 6.4rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4.2rem;
+}
+
+h3 {
+  font-size: 4.2rem;
+  color: var(--primary-text);
+  font-weight: 700;
+}
+
+a {
+  font-family: "Permanent Marker", cursive;
+  font-size: 2.4rem;
+  padding: 1.4rem 4rem;
+  background: var(--primary-purple);
+  color: var(--primary-accent);
+  text-decoration: none;
+}
+
+p {
+  color: var(--sub-text);
+  font-size: 2.8rem;
+}
+
+section.hero {
+  background: url(../images/sky.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  a {
+    margin-top: 2.4rem;
+  }
+}
+
+section.comingsoon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 8rem;
+  a {
+    margin-top: 4rem;
+  }
+  p {
+    max-width: 60rem;
+  }
+
+  img {
+    width: 2rem;
+    margin-right: 1rem;
+  }
+
+  .gcalendar {
+    background: var(--secondary-text);
+    padding: 1.4rem;
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 700;
+    border-radius: 4px;
+  }
+}
+
+section.plain-info {
+  display: flex;
+  flex-direction: row;
+  max-width: 90rem;
+  margin: 8rem auto;
+
+  article {
+    margin: 0 4rem;
+    width: calc(50% - 8rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  img {
+    width: 50%;
+    object-fit: cover;
+    height: auto;
+  }
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  * {
+    font-size: 6px;
+  }
+
+  section.hero {
+    height: 100vh;
+  }
+
+  section.plain-info {
+    max-width: unset;
+    width: calc(100% - 8rem);
+    margin: 4rem auto;
+    flex-direction: column;
+    margin-bottom: 8rem;
+
+    article {
+      margin: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    img {
+      margin-top: 4rem;
+      width: 100%;
+      object-fit: cover;
+      height: auto;
+    }
+
+    &:nth-child(even) {
+      flex-direction: column;
+    }
+  }
+}
