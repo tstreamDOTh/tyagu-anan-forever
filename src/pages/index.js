@@ -59,11 +59,12 @@ const IndexPage = () => (
     </section>
     <section className="plain-info">
       <article>
-        <h3>Our Lovely Family</h3>
+        <h3>Our Family</h3>
         <p>
           We are blessed & fortunate to be surrounded by a{" "}
           <span className="highlight">lovely family </span>. <br></br>
-          <br></br>Without their support & belief, all this would be impossible.
+          <br></br>Without their support & belief, all this would not be
+          possible.
         </p>
       </article>
       <img src={familyImage} />
