@@ -45,15 +45,15 @@ const IndexPage = () => {
             <span className="highlight">3rd of June 2020 </span>, and we invite
             you to witness one of our most special days of our lives <br />
             <br />
-            We know many of you were anticipated to attend the wedding in
+            We know many of you were anticipating to attend the wedding in
             person, but to ensure everyone's health in the given situation, we
             will be having a closed function at home & will be streaming the
             auspicious occasion <span className="highlight">live</span>.
             <br />
             <br />
             Definitely once things get better we will have a great get together
-            & we all are looking forward you and your family very soon to join
-            the post wedding celebrations.
+            & we all are looking forward to you and your family to join the post
+            wedding celebrations very soon.
           </p>
 
           <div className="sign">
