@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Aananya Weds Thiyagaraj`,
-    description: `The most anticipated wedding od the decade`,
+    description: `The most anticipated wedding of the decade`,
     author: `thiyagaraj`,
   },
   plugins: [

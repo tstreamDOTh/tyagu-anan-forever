@@ -36,7 +36,7 @@ h3 {
   font-weight: 700;
 }
 
-a {
+.link {
   font-family: "Permanent Marker", cursive;
   font-size: 2.4rem;
   padding: 1.4rem 4rem;
@@ -60,10 +60,9 @@ p {
 
 section.invite {
   article {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
     background: white;
-    // border: 1.2rem solid var(--primary-purple);
     padding: 4rem;
     max-width: 60rem;
     margin: 8rem auto;
@@ -110,7 +109,7 @@ section.hero {
     font-size: 3rem;
   }
 
-  a {
+  .link {
     margin-top: 2.4rem;
   }
 }
@@ -121,7 +120,10 @@ section.comingsoon {
   align-items: center;
   flex-direction: column;
   margin: 8rem;
-  a {
+  h1 {
+    margin-bottom: 2rem;
+  }
+  .link {
     margin-top: 4rem;
   }
   p {
@@ -185,9 +187,27 @@ section.plain-info {
 
 @media only screen and (max-width: 900px) {
   * {
-    font-size: 6px;
   }
 
+  h2 {
+    font-size: 4rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 3.3rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  .link {
+    font-size: 2rem;
+  }
   section.hero {
     background-repeat: no-repeat;
     background-image: url(../images/sky-mobile.png);
@@ -195,8 +215,8 @@ section.plain-info {
 
   section.plain-info {
     max-width: unset;
-    width: calc(100% - 8rem);
-    margin: 4rem auto;
+    width: calc(100% - 4rem);
+    margin: 2rem auto;
     flex-direction: column;
     margin-bottom: 8rem;
 
@@ -224,15 +244,25 @@ section.plain-info {
 
   section.invite {
     article {
-      padding: 4rem;
+      padding: 2rem;
       max-width: unset;
-      margin: 4rem;
-      width: calc(100% - 16rem);
+      margin: 2rem;
+      width: calc(100% - 8rem);
       margin-bottom: 8rem;
 
       h3 {
         margin-bottom: 2rem;
       }
     }
+  }
+
+  section.comingsoon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem;
+    height: 100vh;
+    text-align: center;
   }
 }

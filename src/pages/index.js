@@ -10,12 +10,14 @@ import coupleImage from "../images/couple.png"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="The Love Tale" />
+    <SEO title="Aananya Weds Thiyagaraj" />
     <section className="hero">
       <h2>So Much For The Love</h2>
       <h1>Aananya Weds Thiyagaraj</h1>
       <p>3rd June 2020</p>
-      <Link to={"./comingsoon"}>Watch The Wedding Live</Link>
+      <Link to={"./comingsoon"} className={"link"}>
+        Watch The Wedding Live
+      </Link>
     </section>
     <section className="invite">
       <article>
