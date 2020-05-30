@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import familyImage from "../images/family.png"
-import coupleImage from "../images/couple.jpg"
+import coupleImage from "../images/couple.png"
 
 const IndexPage = () => (
   <Layout>
