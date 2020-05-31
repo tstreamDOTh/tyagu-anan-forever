@@ -32,7 +32,7 @@ const IndexPage = () => {
       <section className="hero">
         <h2>So Much For The Love</h2>
         <h1>Aananya Weds Thiyagaraj</h1>
-        <p>3rd June 2020</p>
+        <p>3rd June 2020 - 6AM</p>
         <Link to={"./comingsoon"} className={"link"}>
           Watch The Wedding Live
         </Link>
