@@ -33,9 +33,9 @@ const IndexPage = () => {
         <h2>So Much For The Love</h2>
         <h1>Aananya Weds Thiyagaraj</h1>
         <p>3rd June 2020 - 6AM</p>
-        <Link to={"./comingsoon"} className={"link"}>
+        <a href={"https://www.youtube.com/watch?v=ERmo8G_Bjkk"} className={"link"}>
           Watch The Wedding Live
-        </Link>
+        </a>
       </section>
       <section className="invite">
         <article>
